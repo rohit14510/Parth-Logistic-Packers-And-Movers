@@ -205,7 +205,7 @@ header{
 }
 
 .menu .navbar-light .navbar-nav .nav-link:hover,
-.menu .navbar-light .navbar-nav .nav-link.active {
+.menu .navbar-light .navbar-nav  {
   color: #2f5677;
 }
 
@@ -1382,3 +1382,313 @@ h2{
 }
 
 /*---thank-Section-end----*/
+/* ---------Details-Section-Start---------- */
+
+.dsl .dsl-list {
+  margin-bottom: 30px;
+  border: 1px solid #eee;
+  padding: 15px;
+}
+.dsl-list h4{
+  text-transform: uppercase;
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.dsl-list h4::after{
+  position:absolute ;
+  bottom: -3px;
+  left: 0;
+  height: 3px;
+  width: 50px;
+  background-color: #281f4c;
+  content: "";
+}
+.dsl-list ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.dsl-list ul li {
+  border-radius: 5px;
+  background-color: #eee;
+  margin: 10px 0px;
+}
+
+
+.dsl-list ul li a {
+  display: flex;
+  border-radius: 5px;
+  font-size: 18px;
+  align-items: center;
+  position: relative;
+  padding: 8px 10px;
+  justify-content: space-between;
+}
+.dsl-list ul li a::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px;
+  width: 0px;
+  height: 100%;
+  background-color: #281f4c;
+  content: "";
+  transition: .4s;
+}
+.dsl-list ul li a:hover:after{
+  width: 100%;
+}
+.dsl-list ul li a.active::after{
+  width: 100%;
+}
+.dsl-list ul li a span{
+  position: relative;
+  z-index: 3;
+}
+.dsl-list ul li a i{
+  height: 40px;
+  width: 50px;
+  background-color: #281f4c;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  transition: .5s;
+  position: relative;
+  z-index: 3;
+  font-size: 20px;
+  justify-content: center;
+  color: #ffc527;
+}
+.dsl-list ul li a:hover i{
+  background-color: #ffc527;
+  color: #fff;
+}
+
+.dsl-list ul li a:hover,
+.dsl-list ul li .active {
+  color: #fff;
+}
+.dsl-list ul li .active i{
+  background-color: #ffc527;
+  color: #fff;
+}
+
+.dsr h4{
+  margin: 15px 0px;
+  font-weight: 800;
+  font-size: 30px;
+}
+.dsr .dsr-img {
+  margin-bottom: 30px;
+}
+
+.dsr .dsr-img img {
+  max-height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+.dsr .drs-img{
+  margin-bottom: 20px;
+}
+.dsr .drs-img img{
+  border-radius: 10px;
+  object-fit: cover;
+}
+.dsr ul{
+  list-style: none;
+  padding: 0;
+}
+.dsr ul li{
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+.dsr ul li i{
+  height: 30px;
+  width: 30px;
+  background-color: #281f4c;
+  color: #ffc527;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+.dsr ul li span{
+  flex: 1;
+}
+.dls-box {
+  margin: 30px 0px;
+  padding: 50px 30px;
+  border-radius: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.449), rgba(0, 0, 0, 0.483)),url(../images/call.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.dls-box h4 {
+  color: #fff;
+  margin: 20px 0px;
+}
+.dls-box a {
+  color: #fff;
+}
+.details-section .dsl .form-box{
+  background-color: #ffc527;
+  padding: 20px;
+}
+.details-section .dsl .form-box input,.details-section .dsl .form-box textarea{
+  padding: 15px 20px;
+  margin: 7px 0px;
+}
+.ser-inque {
+  padding: 20px;
+  border: 1px solid #eee;
+}
+.ser-inque h4{
+  font-weight: 700;
+}
+.ser-inque .contact-box{
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+.ser-inque .contact-box:hover a{
+  color: #fff;
+}
+.ser-inque .contact-box h4{
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.ser-inque .contact-box .icon{
+  height: 60px;
+  width: 60px;
+  background-color: #281f4c;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ser-inque .contact-box .icon img{
+  width: 40px;
+  filter: brightness(23);
+}
+.ser-inque .contact-box .text{
+  padding-left: 10px;
+}
+.ser-inque .contact-box .icon {
+  margin-right: 10px;
+}
+.details-section .quote-form{
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #281f4c;
+}
+.details-section .quote-form .f-group input,.details-section .quote-form .f-group select,.details-section .quote-form .f-group textarea{
+  padding: 11px 20px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+
+/* ----quote-section-start--- */
+
+.quote-section{
+  padding: 50px 0px;
+  background: linear-gradient(#281f4c,#281f4c);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+.quote-section::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffc527;
+  width: 30%;
+  height: 100%;
+  content: "";
+}
+.quote-section2 .quote{
+  padding: 30px;
+  border-radius: 10px;
+  margin: 0px 20px;
+  background: linear-gradient(#281f4c,#281f4c);
+  color: #fff;
+  position: relative;
+}
+.quote-section2 .quote h4{
+  font-weight: 600;
+  position: relative;
+  font-size: 25px;
+  margin-bottom: 20px;
+  z-index: 32;
+}
+.quote-section2 .quote::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffc527;
+  width: 34%;
+  height: 100%;
+  border-radius: 10px 0px 0px 10px;
+  content: "";
+}
+.quote-section::before {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  clip-path: polygon(0 0,100% 0%,100% 100%,15% 100%);
+  width: 30%;
+  height: 65px;
+  display: flex;
+  background: #ffc527;
+  content: "24/7 service availability";
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: #281f4c;
+  text-transform: capitalize;
+}
+.quote-section .quote-item h5{
+  margin: 0;
+}
+.quote-section .quote-item a{
+  font-weight: 600;
+  color: #281f4c;
+  font-size: 18px;
+}
+.quote-form .f-group input,.quote-form .f-group select,.quote-form .f-group textarea{
+  padding: 15px 20px;
+  width: 100%;
+  margin: 10px 0px;
+  border: 1px solid #eee;
+  outline: none;
+}
+.quote-form .sec-btn{
+  width: 100%;
+  padding: 14px 20px;
+  margin: 10px 0px;
+  border-radius: 0;
+}
+.quote-img {
+  position: relative;
+  z-index: 3;
+  margin-left: -72px;
+}
+.quote-img img{
+  width: 100%;
+}
+.quote-section h4{
+  position: relative;
+  z-index: 3;
+  font-weight: 600;
+}
+/* ----quote-section-end--- */
