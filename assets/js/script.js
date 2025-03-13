@@ -141,3 +141,27 @@ $(document).ready(function () {
   });
 
 });
+$(document).ready(function(){
+  $('#slick_Client').slick({
+      slidesToShow: 5,   // एक बार में कितनी स्लाइड दिखेंगी
+      slidesToScroll: 1,  // एक बार में कितनी स्लाइड स्क्रॉल होंगी
+      autoplay: true,     // अपने आप स्लाइड चलेगी
+      autoplaySpeed: 2000, // 2 सेकंड में एक स्लाइड बदलेगी
+      arrows: true,      // नेविगेशन ऐरो दिखाने के लिए
+      dots: true,        // डॉट नेविगेशन दिखाने के लिए
+      responsive: [
+          {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 2
+              }
+          },
+          {
+              breakpoint: 600,
+              settings: {
+                  slidesToShow: 2
+              }
+          }
+      ]
+  });
+});

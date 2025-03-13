@@ -463,6 +463,15 @@ header{
 }
 
 /* ----Choose-Section-End---- */
+/* ----Our Client-Section-Start---- */
+.slick-dots li {
+  list-style: none;
+  margin: 0 5px;
+}
+.slick-dots li button {
+  display: none;
+}
+/* ----Our Client-Section-End---- */
 
 /* ----testimonial-section-start---- */
 .tes-slider{
